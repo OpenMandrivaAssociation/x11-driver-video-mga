@@ -40,6 +40,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_libdir}/xorg/modules/drivers/mga_drv.la
 %{_libdir}/xorg/modules/drivers/mga_drv.so
-%{_mandir}/man4/mga.4.bz2
+%{_mandir}/man4/mga.*
 
 
