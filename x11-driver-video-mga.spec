@@ -1,6 +1,6 @@
 Name: x11-driver-video-mga
 Version: 1.4.7
-Release: %mkrel 1
+Release: %mkrel 2
 Epoch: 1 
 Summary: The X.org driver for Matrox Cards
 Group: System/X11
@@ -24,7 +24,7 @@ The X.org driver for Matrox Cards
 %setup -q -n xf86-video-mga-%{version}
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
