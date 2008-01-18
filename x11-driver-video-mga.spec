@@ -24,8 +24,6 @@ Patch5: 0005-Don-t-build-or-call-init_dri-if-XF86DRI-is-undefined.patch
 Patch6: 0006-Update-for-new-policy-of-hidden-symbols-and-common-m.patch
 ########################################################################
 BuildRequires: x11-util-macros		>= 1.1.5-4mdk
-#BuildRequires: gcc-4.2.2-2mdv2008.1
-#BuildRequires: glibc-devel-2.7-1mdv2008.1
 BuildRequires: libdrm-devel		>= 2.3.0
 BuildRequires: libpixman-1-devel	>= 0.9.6
 BuildRequires: x11-proto-devel		>= 7.3
