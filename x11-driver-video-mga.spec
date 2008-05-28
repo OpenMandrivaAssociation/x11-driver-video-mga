@@ -18,7 +18,7 @@ BuildRequires: GL-devel
 Conflicts: xorg-x11-server < 7.0
 
 %description
-The X.org driver for Matrox Cards
+The X.org driver for Matrox Cards.
 
 %prep
 %setup -q -n xf86-video-mga-%{version}
