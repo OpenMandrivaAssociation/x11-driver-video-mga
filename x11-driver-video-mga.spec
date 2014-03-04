@@ -24,9 +24,9 @@ x11-driver-video-mga is the X.org driver for Matrox Cards.
 %prep
 %setup -qn xf86-video-mga-%{version}
 %apply_patches
+autoreconf -fis
 
 %build
-autoreconf -fis
 %configure
 %make
 
