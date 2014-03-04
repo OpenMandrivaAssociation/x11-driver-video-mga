@@ -1,9 +1,8 @@
-diff -up xf86-video-mga-1.6.2/src/mga_driver.c.jx xf86-video-mga-1.6.2/src/mga_driver.c
---- xf86-video-mga-1.6.2/src/mga_driver.c.jx	2013-05-20 16:14:10.000000000 -0400
-+++ xf86-video-mga-1.6.2/src/mga_driver.c	2013-05-20 16:14:48.381607479 -0400
-@@ -2004,7 +2004,12 @@ MGAPreInit(ScrnInfoPtr pScrn, int flags)
-     xf86DrvMsg(pScrn->scrnIndex, from, "Using %s cursor\n",
-         pMga->HWCursor ? "HW" : "SW");
+--- xf86-video-mga-1.6.3/src/mga_driver.c.0003~	2014-03-04 23:28:05.268821117 +0100
++++ xf86-video-mga-1.6.3/src/mga_driver.c	2014-03-04 23:30:01.298822361 +0100
+@@ -2023,7 +2023,12 @@ MGAPreInit(ScrnInfoPtr pScrn, int flags)
+     }
+ #endif
  
 -    if (xf86ReturnOptValBool(pMga->Options, OPTION_NOACCEL, FALSE)) {
 +    if (xf86ReturnOptValBool(pMga->Options, OPTION_SHADOW_FB, TRUE)) {
@@ -15,7 +14,7 @@ diff -up xf86-video-mga-1.6.2/src/mga_driver.c.jx xf86-video-mga-1.6.2/src/mga_d
  	pMga->NoAccel = TRUE;
  	xf86DrvMsg(pScrn->scrnIndex, X_CONFIG, "Acceleration disabled\n");
      } else {
-@@ -2051,12 +2056,6 @@ MGAPreInit(ScrnInfoPtr pScrn, int flags)
+@@ -2070,12 +2075,6 @@ MGAPreInit(ScrnInfoPtr pScrn, int flags)
  			  (1 << pScrn->offset.green) |
          (((pScrn->mask.blue >> pScrn->offset.blue) - 1) << pScrn->offset.blue);
      }
