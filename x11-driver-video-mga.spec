@@ -1,8 +1,8 @@
 Summary:	X.org driver for Matrox Cards
 Name:		x11-driver-video-mga
 Epoch:		2
-Version:	1.6.3
-Release:	7
+Version:	1.6.4
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
@@ -10,7 +10,6 @@ Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-mga-%
 Patch0:		mga-1.4.5-no-hal-advertising.patch
 Patch2:		mga-1.4.12-bigendian.patch
 Patch3:		mga-1.6.3-shadowfb.patch
-Patch4:		U_dri-Stop-uselessly-initializing-the-ValidateTree-hoo.patch
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	pkgconfig(xorg-macros)
