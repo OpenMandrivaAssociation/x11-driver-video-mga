@@ -1,7 +1,7 @@
 Summary:	X.org driver for Matrox Cards
 Name:		x11-driver-video-mga
 Epoch:		2
-Version:	1.6.4.20161117
+Version:	1.6.5
 Release:	1
 Group:		System/X11
 License:	MIT
