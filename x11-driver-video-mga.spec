@@ -1,15 +1,12 @@
 Summary:	X.org driver for Matrox Cards
 Name:		x11-driver-video-mga
 Epoch:		2
-Version:	1.6.5
-Release:	3
+Version:	2.0.0
+Release:	1
 Group:		System/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-mga-%{version}.tar.bz2
-Patch0:		mga-1.4.5-no-hal-advertising.patch
-Patch2:		mga-1.4.12-bigendian.patch
-Patch3:		mga-1.6.3-shadowfb.patch
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	pkgconfig(xorg-macros)
@@ -21,16 +18,15 @@ Requires:	x11-server-common %(xserver-sdk-abi-requires videodrv)
 x11-driver-video-mga is the X.org driver for Matrox Cards.
 
 %prep
-%setup -qn xf86-video-mga-%{version}
-%apply_patches
+%autosetup -n xf86-video-mga-%{version} -p1
 autoreconf -fis
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_libdir}/xorg/modules/drivers/mga_drv.so
