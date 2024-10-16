@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 Summary:	X.org driver for Matrox Cards
 Name:		x11-driver-video-mga
 Epoch:		2
