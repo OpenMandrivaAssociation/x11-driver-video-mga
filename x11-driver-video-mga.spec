@@ -1,12 +1,14 @@
+%define _disable_ld_no_undefined 1
+
 Summary:	X.org driver for Matrox Cards
 Name:		x11-driver-video-mga
 Epoch:		2
-Version:	2.0.1
-Release:	2
+Version:	2.1.0
+Release:	1
 Group:		System/X11
 License:	MIT
-Url:		http://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-mga-%{version}.tar.xz
+Url:		https://xorg.freedesktop.org
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-mga-%{version}.tar.xz
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	pkgconfig(xorg-macros)
