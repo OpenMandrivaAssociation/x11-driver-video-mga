@@ -10,7 +10,7 @@ License:	MIT
 Url:		https://xorg.freedesktop.org
 # Insread deprecated freedesktop lets use activ maintained xlibre version
 #Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-mga-%{version}.tar.xz
-Source0:  https://github.com/X11Libre/xf86-video-mga/archive/refs/tags/xlibre-xf86-video-mga-%{version}.tar.gz
+Source0:  https://github.com/X11Libre/xf86-video-mga/archive/xlibre-xf86-video-mga-%{version}/xf86-video-mga-xlibre-xf86-video-mga-%{version}.tar.gz
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	pkgconfig(xorg-macros)
